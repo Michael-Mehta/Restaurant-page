@@ -4,6 +4,7 @@ export default function home() {
 
 
         const element = document.createElement('div');
+        element.id = "HOME";
         const name = document.createElement("p");
         const review = document.createElement("p");
       

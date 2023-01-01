@@ -25,14 +25,19 @@ export default function tabs() {
 
   homebutton.addEventListener('click', button => {
 
-    if(element.contains(menu()))
+    if(element.contains(document.getElementById("HOME")))
     {
-      menu().remove();
+      document.getElementById("HOME").remove();
+    }
+
+    if(element.contains(document.getElementById("MENU")))
+    {
+      document.getElementById("MENU").remove();
     }
        
-    if(element.contains(contact()))
+    if(element.contains(document.getElementById("CONTACT")))
     {
-      contact().remove();
+      document.getElementById("CONTACT").remove();
     }
        
        element.appendChild(home());
@@ -40,13 +45,20 @@ export default function tabs() {
   });
   
   menubutton.addEventListener('click', button => {
-    if(element.contains(contact()))
+
+     if(element.contains(document.getElementById("HOME")))
     {
-      contact().remove();
+      document.getElementById("HOME").remove();
     }
-    if(element.contains(home()))
+
+    if(element.contains(document.getElementById("MENU")))
     {
-      home().remove();
+      document.getElementById("MENU").remove();
+    }
+       
+    if(element.contains(document.getElementById("CONTACT")))
+    {
+      document.getElementById("CONTACT").remove();
     }
 
     element.appendChild(menu());
@@ -55,15 +67,20 @@ export default function tabs() {
 
 contactbutton.addEventListener('click', button => {
  
-  if(element.contains(menu()))
-  {
-    menu().remove();
-  }
-  if(element.contains(home()))
+   if(element.contains(document.getElementById("HOME")))
     {
-      home().remove();
+      document.getElementById("HOME").remove();
     }
 
+    if(element.contains(document.getElementById("MENU")))
+    {
+      document.getElementById("MENU").remove();
+    }
+       
+    if(element.contains(document.getElementById("CONTACT")))
+    {
+      document.getElementById("CONTACT").remove();
+    }
 
   element.appendChild(contact());
 

@@ -5,6 +5,7 @@ import Burritopic from './burrito.png';
 
 export default function menu() {
     const element = document.createElement('div');
+    element.id = "MENU";
     const burrito = document.createElement("p");
     const quesadilla = document.createElement("p");
     const birriataco = document.createElement("p");

@@ -1,5 +1,6 @@
 export default function contact() {
     const element = document.createElement('div');
+    element.id = "CONTACT";
     const phone = document.createElement("p");
     const about = document.createElement("p");
 
